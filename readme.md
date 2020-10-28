@@ -84,6 +84,9 @@
   ![](http://upyun.luckly-mjw.cn/Assets/baidu-statistics/011.png)
   ![](http://upyun.luckly-mjw.cn/Assets/baidu-statistics/010.png)
 
+## [接口调试官方地址](https://tongji.baidu.com/api/debug/#)
+- access_token 获取成功后，可通过该工具，测试 access_token 的有效性，并验证接口调用结果。
+
 
 ## 完结撒花，感谢阅读。
 ![](http://upyun.luckly-mjw.cn/Assets/baidu-statistics/013.jpeg)
