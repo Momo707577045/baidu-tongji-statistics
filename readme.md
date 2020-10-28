@@ -75,7 +75,7 @@
 
 ### 本地部署生成器
 - 若不放心工具的使用，可下载 node 后端脚本，启动服务器完成该过程
-- 【第零步】[下载脚本]()，并填入「API Key」「Secret Key」
+- 【第零步】[下载脚本](http://upyun.luckly-mjw.cn/Assets/baidu-statistics/index.js)，并填入「API Key」「Secret Key」
 - 【第一步】执行```node index.js```，启动脚本
 - 【第二步】将本地 URL ```http://127.0.0.1:10005/```填入「安全设置」中
   ![](http://upyun.luckly-mjw.cn/Assets/baidu-statistics/012.png)
