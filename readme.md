@@ -1,6 +1,6 @@
 # 百度统计 API 接入的坑及 access_token 生成工具
 
-### 两种账号模式
+## 两种账号模式
 - 「百度商业账号」：面向百度推广、百度网盟、百度联盟、百度统计、百度司南等账号，可以理解为面向企业用户。
 - 「百度账户」：面向百度搜索、百度贴吧、百度云盘、百度知道、百度文库等产品，面向一般个体用户。
 - 两种账户系统不一样，不互通。网上教程与类库，针对的是「百度商业账号」，针对「百度账户」的教程几乎没有。
@@ -8,7 +8,7 @@
 
   ![](http://upyun.luckly-mjw.cn/Assets/baidu-statistics/001.png)
 
-### 两种账户系统使用的调用凭证不同
+## 两种账户系统使用的调用凭证不同
 - 「百度商业账号」
   - 调用接口使用的是「token」
   - 「token」在「百度统计-数据导出服务」页面，点击「立即开通」，由系统自动生成。
@@ -22,7 +22,7 @@
 
     ![](http://upyun.luckly-mjw.cn/Assets/baidu-statistics/002.jpeg)
 
-### access_token 生成过程
+## access_token 生成过程
 *首次换取 access_token 的过程，需要在浏览器端完成，无法纯服务器端完成*
 - 【第零步】
   - 在「[百度开发者中心](http://developer.baidu.com/console#app/project)」中创建工程，获得 apiKey 与 secretKey
@@ -55,12 +55,12 @@
   - redirect_uri 只在「第一步」「第三步」中使用，只用于首次换取 access_token，只使用一次。刷新 access_token 不需要用到。
 
 
-### redirect_uri 保存不生效的坑
+## redirect_uri 保存不生效的坑
 - 笔者偶现 redirect_uri 保存不生效，实际生效的仍是之前填的回调地址。
 - 可新开项目即可解决该问题。
 
 
-### [access_token 生成器](http://blog.luckly-mjw.cn/tool-show/baidu-statistics/index.html)
+## [access_token 生成器](http://blog.luckly-mjw.cn/tool-show/baidu-statistics/index.html)
 > 鉴于只有初次创建 access_token 的过程才会到浏览器，且后续情况 redirect_uri 都是无意义的。故首次获取 access_token 的过程是不可复用，只需一次的。笔者将该步骤封装成工具，供获取 access_token 使用。
 使用方式
 - 将工具链接```http://blog.luckly-mjw.cn/tool-show/baidu-statistics/index.html```填入「安全设置」中。redirect_uri 只用于回调，无域名限制，无安全风险。
@@ -71,9 +71,9 @@
 
   ![](http://upyun.luckly-mjw.cn/Assets/baidu-statistics/005.png)
 
-### [项目地址](https://github.com/Momo707577045/baidu-tongji-statistics)
+## [项目地址](https://github.com/Momo707577045/baidu-tongji-statistics)
 
-### 本地部署生成器
+## 本地部署生成器
 - 若不放心工具的使用，可下载 node 后端脚本，启动服务器完成该过程
 - 【第零步】[下载脚本](http://upyun.luckly-mjw.cn/Assets/baidu-statistics/index.js)，并填入「API Key」「Secret Key」
 - 【第一步】执行```node index.js```，启动脚本
@@ -85,7 +85,7 @@
   ![](http://upyun.luckly-mjw.cn/Assets/baidu-statistics/010.png)
 
 
-### 完结撒花，感谢阅读。
+## 完结撒花，感谢阅读。
 ![](http://upyun.luckly-mjw.cn/Assets/baidu-statistics/013.jpeg)
 
 
